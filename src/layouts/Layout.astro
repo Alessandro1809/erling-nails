@@ -22,12 +22,15 @@ const { title } = Astro.props;
 	</head>
 	
 	<body>
-		<div class="absolute  -z-10 h-auto w-full bg-neutral-100 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"><div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-neutral-500 opacity-20 blur-[100px]">
-		</div>
-		<Header />
+		<div class="absolute h-full w-full bg-slate-200"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]">
+			<Header />
 	
-		<slot />
-	</div>
+			<slot />
+		</div></div>
+		<!-- <div class="absolute  -z-10 h-auto w-full bg-neutral-100 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"><div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-neutral-500 opacity-20 blur-[100px]">
+		</div> -->
+		
+	
 	</body>
 </html>
 <style is:global>
