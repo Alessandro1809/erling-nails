@@ -1,2 +1,17 @@
 ---
+import Layout from "../layouts/Layout.astro"
+import acuarela from '../assets/acuarela_Contact.png';
 ---
+
+<Layout title="Works">
+
+<section class="container mx-auto">
+    <h2 class="flex justify-center text-3xl md:text-5xl transition-all duration-1000 w-auto my-20">Some Works</h2>
+    <picture class="flex -mb-72">
+        <img src={acuarela.src} alt="">
+    </picture>
+    <p class="text-2xl font-medium text-center">Did you like any of my work? Send me a message and book your appointment!</p>
+
+</section>
+
+</Layout>
